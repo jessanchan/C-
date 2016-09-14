@@ -1,0 +1,15 @@
+Enter file contents here
+
+//删除数组中重复的元素，六行代码解决
+#include "stdio.h"
+int main(){
+int i,j,k,a[]={4,4,78,3,2,19,0,56,56,8,7,3,1,90,86,437,918,0,1},ln;
+for(ln=sizeof(a)/sizeof(int),k=i=0;i<ln-1;i++){
+  for(j=0;j<k;j++)
+  if(a[j]==a[i]) break;
+  if(j>=k) a[k++]=a[i];
+}
+for(i=0;i<k;printf("%d ",a[i++]));//Look at...
+  printf("\n");
+  return 0;
+}
